@@ -262,8 +262,11 @@ a { text-decoration: none;}
 .postPage__coverImage {
    height:300px;
    margin:40px -70px;
-   background:blue;
+   background:#E8F4FE;
    border-radius:0 8px 8px 0;
+   background-size:cover;
+   background-position: center center;
+   background-origin: fixed;
 }
 
 .postPage.page .postPage__date {
@@ -367,6 +370,7 @@ a { text-decoration: none;}
 @media (max-width:1200px) {
    .welcomeText { border-radius: 0;}
    .postPage__content pre { border-radius:0; }
+   .postPage__coverImage { border-radius:0; }
 }
 
 @media (max-width:860px) {
@@ -419,5 +423,9 @@ a { text-decoration: none;}
    .postPage__title {
       font-size:30px;
       line-height:36px;
+   }
+   .postPage__coverImage {
+      margin-left:-40px;
+      margin-right:-40px;
    }
 }
