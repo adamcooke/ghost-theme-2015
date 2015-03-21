@@ -259,6 +259,13 @@ a { text-decoration: none;}
    font-size:16px;
 }
 
+.postPage__coverImage {
+   height:300px;
+   margin:40px -70px;
+   background:blue;
+   border-radius:0 8px 8px 0;
+}
+
 .postPage.page .postPage__date {
    display:none;
 }

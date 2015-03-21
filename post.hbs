@@ -8,6 +8,10 @@
       <p class="postPage__date"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='dddd Do MMMM YYYY'}}</time></p>
     </header>
 
+    {{#if image}}
+      <div class='postPage__coverImage' style="background-image:url({{image}})"></div>
+    {{/if}}
+
     <section class="postPage__content">
         {{content}}
     </section>
