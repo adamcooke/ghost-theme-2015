@@ -1,0 +1,31 @@
+{{!< default}}
+
+<div class='pageContent'>
+
+  <div class='welcomeText'>
+    <img src='{{asset "images/me.png"}}' class='welcomeText__me'>
+    <h1 class='welcomeText__text'>
+      <b>Greetings!</b> <a href='/me/'>I'm Adam</a> and I'm a UK-based <a href='/projects/'>software developer &amp; designer</a> as well as being managing director of <a href='http://atechmedia.com'>aTech Media</a>, <a href='http://viaduct.io'>Viaduct</a> &amp; <a href='http://dial9.co.uk' class='d9'>Dial 9</a>.
+    </h1>
+  </div>
+
+
+  <div class='postsList'>
+    {{#foreach posts}}
+    <article class="postsList__post {{post_class}}">
+      <h2 class='postsList__postTitle'><a href="{{url}}">{{{title}}}</a></h2>
+      <section class="postsList__postExcerpt">
+          <p>{{excerpt words="50"}}&hellip;</p>
+      </section>
+      <p class="postsList__postMeta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></p>
+    </article>
+    {{/foreach}}
+  </div>
+
+  <div class='postsFooter'>
+    <p class='postsFooter__viaduct'><a href='http://viaduct.io/refer/dc6a04'><img src='https://cdn.viaduct.io/hosted/small-grey.png' /></a></p>
+    {{pagination}}
+
+  </div>
+
+</div>

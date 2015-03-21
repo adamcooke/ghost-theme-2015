@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/reset.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Slabo+27px:400' rel='stylesheet' type='text/css'>
+    {{ghost_head}}
+</head>
+<body>
+    <div class='navigationContainer'></div>
+    <div class='navigationContent'>
+        <input type='checkbox' id='menuToggle'>
+        <label for='menuToggle' class='navigationContent__mobileMenuToggle'>
+            <img src='{{asset "images/menu.svg"}}' alt='Menu'>
+        </label>
+
+        <div class='navigationContent__titleBox'>
+            <p class='navigationContent__title'><a href='/'>Adam Cooke</a></p>
+            <p class='navigationContent__who'>Software designer &amp; developer</p>
+        </div>
+
+        <div class='navigationContent__mobileMenu'>
+            <ul class='navigationContent__nav'>
+                <li><a href='/'><img src='{{asset "images/welcome.svg"}}'> Welcome</a></li>
+                <li><a href='/me'><img src='{{asset "images/about_me.svg"}}'> A bit about me</a></li>
+                <li><a href='/projects'><img src='{{asset "images/projects.svg"}}'> Things I've done</a></li>
+                <li><a href='/opensource'><img src='{{asset "images/open_source.svg"}}'> Open source projects</a></li>
+            </ul>
+
+            <p class='navigationContent__companiesTitle'>My Companies</p>
+            <ul class='navigationContent__companies'>
+                <li><a href='http://atechmedia.com'><b>aTech Media</b> - software development</a></li>
+                <li><a href='http://viaduct.io'><b>Viaduct</b> - application hosting</a></li>
+                <li><a href='http://www.dial9.co.uk'><b>Dial 9 Communications</b> - VoIP</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {{{body}}}
+
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>
