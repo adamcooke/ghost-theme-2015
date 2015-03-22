@@ -70,7 +70,7 @@ a { text-decoration: none;}
 }
 
 
-.navigationContent__companiesTitle {
+.navigationContent__subTitle {
    margin-bottom:15px;
    font-size:14px;
    color:#6C899C;
@@ -78,6 +78,7 @@ a { text-decoration: none;}
 
 .navigationContent__companies {
    font-size:13px;
+   margin-bottom:30px;
 }
 
 .navigationContent__companies li {
@@ -103,6 +104,19 @@ a { text-decoration: none;}
 
 .navigationContent__companies li a:hover b {
    text-decoration: underline;
+}
+
+.navigationContent__socialLinks a {
+   opacity:0.5;
+   margin-right:5px;
+}
+
+.navigationContent__socialLinks a:hover {
+   opacity: 1;
+}
+
+.navigationContent__socialLinks a img {
+   width:24px;
 }
 
 .navigationContent__mobileMenuToggle {
